@@ -14,7 +14,13 @@
         6 = wraith
         7 = I am going to murder danny with my lute
         */
+      var firsts = ["Abraham","Adelaide","Albert","Alice","Amos","Anna","August","Beatrice","Calvin","Cecily","Chester","Clara","Clarence","Cora","Fyodor","Garth","Hroðgar","Viktoria","Victoria","Amun","Delfina","Erato","Megumi","Blandinus","Huda","Desislav","Alberic","Theresa","Feivel","Theokritos","Aetius","Michaël","Indrajit","Berta","Ethelyn","Dido","Rochelle","Eva","Mirsada","Ivanka","Rufina","Nikolay","Metrophanes","Franjić","Rufino","Marek","Đurđica","Madge","Adella","Puskás","Ditte","Aputsiaqq","Ludvigs","Gisilbert","Vicente","Vivian"];
+    var lasts = ["Rounds","Killam","Stanko","Baudin","Jung","Rojas","Das","Sciacchitano","Stefansson","Adami","Van Can","Pasternak","Aling","Summerfield","Heppenheimer","Collins","Hayley","Gutierrez","Reeve","Robustelli","Smit","Roy","Sokolov","Stroman","Bengtsson","Blum","Szombathy"];
+    var first;
+    var last;
     function generate(){
+    var first = firsts[Math.floor(Math.random() * firsts.length)];
+    var last = lasts[Math.floor(Math.random() * lasts.length)];
     var classy = Math.floor(Math.random() * 6) + 1
     if (1 == classy) {
     var f = ["Second Chance Two Handed","Second Chance One Handed","Protect","Close Range Archery","Surge","Projectile Deflect","Toss","Disarm","Circle Sweep"];
@@ -39,7 +45,7 @@
             }
             
         }
-        document.getElementById("fin").innerHTML = "Fighter" +"<br>"+f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML = first +" "+last+"- "+"Fighter" +"<br>"+f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
     }
         
 
@@ -66,7 +72,7 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Rogue"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Rogue"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
     }
      
     
@@ -95,7 +101,7 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Knight"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Knight"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
     }
         
      if (4 == classy) {
@@ -121,7 +127,7 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Bard"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Bard"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
     }
         
         
@@ -152,7 +158,7 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Alchemist"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Alchemist"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
     }  
         
         
@@ -181,7 +187,7 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Wraith"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Wraith"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
     }     
         
         
@@ -190,6 +196,8 @@
     }
     
     function fate(){
+        var first = firsts[Math.floor(Math.random() * firsts.length)];
+    var last = lasts[Math.floor(Math.random() * lasts.length)];
         var f = ["Second Chance Two Handed","Second Chance One Handed","Protect","Close Range Archery","Surge","Projectile Deflect","Toss","Disarm","Circle Sweep"];
      var f1 = f[Math.floor(Math.random() * f.length)];
         
@@ -212,11 +220,13 @@
             }
             
         }
-        document.getElementById("fin").innerHTML = "Fighter" +"<br>"+f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML = first +" "+last+"- "+"Fighter" +"<br>"+f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
         
     }
         
         function danny(){
+            var first = firsts[Math.floor(Math.random() * firsts.length)];
+    var last = lasts[Math.floor(Math.random() * lasts.length)];
                var f = ["Backstab","Hide","Sixth Sense","Uncanny Dodge","Thieves Tool","Thieves Speak","Grapple Throw","Pickpocket ","Smoke Pellet"];
      var f1 = f[Math.floor(Math.random() * f.length)];
         
@@ -239,10 +249,13 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Rogue"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Rogue"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
             
         }
-        function lick(){  var f = ["Danger Sense","Upper Hand","Call To Arms","Critical Assist","Intimidation","Lunge","Parry","Toss","Disarm"];
+        function lick(){
+            var first = firsts[Math.floor(Math.random() * firsts.length)];
+    var last = lasts[Math.floor(Math.random() * lasts.length)];
+            var f = ["Danger Sense","Upper Hand","Call To Arms","Critical Assist","Intimidation","Lunge","Parry","Toss","Disarm"];
      var f1 = f[Math.floor(Math.random() * f.length)];
         
     
@@ -264,9 +277,12 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Knight"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]}
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Knight"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]}
         
-        function sing(){var f = ["Bolero of Healing","Ballade of Power","Nocturne of Slumber","Cacophony of Deafening","Serenade of Curing","Counter Disarm ","Mimic Ability ","Charm","Mimic Sound"];
+        function sing(){
+            var first = firsts[Math.floor(Math.random() * firsts.length)];
+    var last = lasts[Math.floor(Math.random() * lasts.length)];
+            var f = ["Bolero of Healing","Ballade of Power","Nocturne of Slumber","Cacophony of Deafening","Serenade of Curing","Counter Disarm ","Mimic Ability ","Charm","Mimic Sound"];
      var f1 = f[Math.floor(Math.random() * f.length)];
         
     
@@ -288,10 +304,12 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Bard"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Bard"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
                        }
         
-        function sawa(){var f = ["Flask of Healing","Transmutate Limbs","Acid Jacket","Slip Pot","Serenade of Curing","Disguise","Flame Blockade","Reap Misfortune","Reckless Mind","Pandora's Pot"];
+        function sawa(){var first = firsts[Math.floor(Math.random() * firsts.length)];
+    var last = lasts[Math.floor(Math.random() * lasts.length)];
+                        var f = ["Flask of Healing","Transmutate Limbs","Acid Jacket","Slip Pot","Serenade of Curing","Disguise","Flame Blockade","Reap Misfortune","Reckless Mind","Pandora's Pot"];
      var f1 = f[Math.floor(Math.random() * f.length)];
         
     
@@ -313,9 +331,11 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Alchemist"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Alchemist"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
                        }
-        function scream(){var f = ["Brand","Detonate ","Stun","Fearful Illusion","Sixth Sense","The Haunt","Spirit Maze","Reap Misfortune","Wraith Form"];
+        function scream(){var first = firsts[Math.floor(Math.random() * firsts.length)];
+    var last = lasts[Math.floor(Math.random() * lasts.length)];
+                          var f = ["Brand","Detonate ","Stun","Fearful Illusion","Sixth Sense","The Haunt","Spirit Maze","Reap Misfortune","Wraith Form"];
      var f1 = f[Math.floor(Math.random() * f.length)];
         
     
@@ -337,7 +357,7 @@
             }
             
         }
-        document.getElementById("fin").innerHTML ="Wraith"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
+        document.getElementById("fin").innerHTML =first +" "+last+"- "+"Wraith"+"<br>"+ f[0] +"<br>"+ f[1]+"<br>"+f[2]+"<br>"+f[3]
                          }
     </script>
 </html>
