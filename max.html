@@ -1,4 +1,44 @@
 <!DOCTYPE html>
 <html>
-<p>hi</p>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<button onclick="fighter()">Fighters</button>
+    <div id="fight">
+        FIGHTER - RUSHER TYPE <br>
+        Surge - use to attack twice early on<br>
+        Projectile Deflect - when being healed this makes it harder to be picked off<br>
+        Disarm - can be used with surge<br>
+        Circle Sweep - good splash<br>
+        In battle: Run at enemies, use surge so you can use disarm and circle sweep (if disarmed enemy has harder time attacking), attack until low health, drop back and be healed</div><br>
+
+    <button onclick="rogue()">Rogue</button>
+        <div id="rog">ROGUEHOG<br>
+Sixth sense- <br>
+Uncanny dodge - when used with sixth sense halves all damage to you<br>
+Grapple throw - hook the enemies in<br>
+Smoke pellet - use to run away when things get intense</div>
+    
+<script>
+function fighter() {
+    var hid= document.getElementById("fight");
+    if (hid.style.display === "none") {
+        hid.style.display = "block";
+    } else {
+        hid.style.display = "none";
+    }
+    
+}  
+function rogue() {
+    var hid= document.getElementById("rog");
+    if (hid.style.display === "none") {
+        hid.style.display = "block";
+    } else {
+        hid.style.display = "none";
+    }
+    
+}      
+    
+    
+    
+    
+</script>
 </html>
